@@ -1,5 +1,5 @@
 {
-  "name": "project",
+  "name": "react-notes",
   "dependencies": {
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -13,7 +13,9 @@
     "babel-core": "^6.0",
     "babel-loader": "^7.0",
     "babel-preset-env": "*",
-    "babel-preset-react": "*"
+    "babel-preset-react": "*",
+    "babel-preset-stage-0": "*",
+    "babel-preset-es2015": "*"
   },
   "scripts": {
     "build": "webpack",

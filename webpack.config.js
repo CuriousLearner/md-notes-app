@@ -1,25 +1,28 @@
 module.exports = {
-  "output": {
-    "filename": "[name].pack.js"
+  output: {
+    filename: "[name].pack.js",
   },
-  "module": {
-    "rules": [
+  module: {
+    rules: [
       {
-        "use": {
-          "loader": "babel-loader",
-          "options": {
-            "presets": [
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: [
+              "es2015",
+              "react",
+              "stage-0",
               "babel-preset-env",
-              "babel-preset-react"
-            ]
-          }
+              "babel-preset-react",
+            ],
+          },
         },
-        "exclude": /node_modules/,
-        "test": /\.js$/
-      }
-    ]
+        exclude: /node_modules/,
+        test: /\.js$/,
+      },
+    ],
   },
-  "entry": {
-    "index": "./index"
-  }
+  entry: {
+    index: "./index",
+  },
 };
