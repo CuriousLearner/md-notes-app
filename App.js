@@ -56,7 +56,7 @@ export default function App() {
   }
 
   return (
-    <main class="main">
+    <main>
       {notes.length > 0 ? (
         <Split sizes={[30, 70]} direction="horizontal" className="split">
           <Sidebar
