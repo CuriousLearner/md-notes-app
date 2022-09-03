@@ -1041,7 +1041,7 @@ function App() {
 
   return _react2.default.createElement(
     "main",
-    null,
+    { "class": "main" },
     notes.length > 0 ? _react2.default.createElement(
       _reactSplit2.default,
       { sizes: [30, 70], direction: "horizontal", className: "split" },
